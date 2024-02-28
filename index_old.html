@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Nguyễn Phúc Duy">
+  <meta name="generator" content="npduylab">
+  <title>ATLAS GIẢI PHẪU BỆNH</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    /*
+     * Navbar
+     */
+    .navbar-brand {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      font-size: 1rem;
+      background-color: rgba(0, 0, 0, .25);
+      box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+      color: black;
+    }
+
+    .navbar .navbar-toggler {
+      top: .25rem;
+      right: 1rem;
+    }
+
+    .navbar .form-control {
+      padding: .75rem 1rem;
+      border-width: 0;
+      border-radius: 0;
+    }
+
+    /* Improved sidebar styling */
+    #sidebarMenu {
+      min-height: 100vh;
+      /* Full height */
+    }
+
+    .nav-link {
+      color: #333;
+      /* Improved contrast */
+    }
+
+    .nav-link.active {
+      background-color: #f8f9fa;
+      /* Light background for active link */
+      color: #007bff;
+      /* Bootstrap primary color for active link text */
+    }
+
+    @media (min-width: 992px) {
+
+      /* Adjust the min-width as needed */
+      #sidebarMenu {
+        margin-left: -250px;
+        /* Adjust the width of the sidebar */
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 0.9rem;
+        /* Adjust font size for small screens */
+      }
+
+      /* Ensure sidebar is fully collapsible on small screens */
+      #sidebarMenu {
+        position: fixed;
+        /* Make sidebar fixed on the left */
+        top: 0;
+        left: 0;
+        width: 250px;
+        /* Fixed sidebar width */
+        z-index: 1000;
+        /* Ensure sidebar is above other content */
+        transition: transform 0.3s ease-in-out;
+        /* Smooth transition for sidebar */
+      }
+
+      #sidebarMenu.collapsed {
+        transform: translateX(-100%);
+        /* Hide sidebar off-screen when collapsed */
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,.1);">
+    <a class="navbar-brand" href="#">Atlas Giải phẫu bệnh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+        <a class="nav-item nav-link" href="#">Đăng nhập</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                TRANG CHỦ <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="collapse" data-target="#savedReportsSubMenu"
+                aria-expanded="false">
+                <span data-feather="folder"></span>
+                CƠ QUAN
+              </a>
+              <ul class="collapse" id="savedReportsSubMenu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Đâu cổ
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Đường tiêu hóa
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Vú
+                  </a>
+                </li>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#tebaotuyen" aria-expanded="false">
+              <span data-feather="folder"></span>
+              THỰC TẬP
+            </a>
+            <ul class="collapse" id="tebaotuyen">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Tuyến cổ trong
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Tuyến nội mạc
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              TÀI LIỆU
+            </a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+      </main>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="dashboard.js"></script>
+  <!-- Enable Bootstrap dropdown functionality -->
+  <script>
+    $(document).ready(function () {
+      $('.nav-link[data-toggle="collapse"]').on('click', function () {
+        $(this).toggleClass('active');
+      });
+    });
+    $(document).ready(function () {
+      // Your existing script remains the same
+
+      // Additional script for responsive sidebar toggle
+      $('.navbar-toggler').click(function () {
+        $('#sidebarMenu').toggleClass('collapsed');
+      });
+    });
+    $(document).ready(function () {
+      $('.navbar-toggler').click(function () {
+        var sidebarWidth = $('#sidebarMenu').width();
+        if ($('#sidebarMenu').css('margin-left') == '0px') {
+          $('#sidebarMenu').animate({ marginLeft: -sidebarWidth }, 'fast');
+        } else {
+          $('#sidebarMenu').animate({ marginLeft: '0' }, 'fast');
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

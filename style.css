@@ -1,0 +1,81 @@
+
+/* Center-align nav items */
+.navbar-nav {
+    margin-right: auto; /* Push everything to the right */
+    margin-left: auto; /* and to the left, effectively centering */
+}
+
+/* Add padding to nav items for spacing */
+.nav-item {
+    padding: 0 15px; /* Adjust the padding as needed */
+}
+
+/* Align search form and login button to the right */
+.navbar-collapse {
+    justify-content: space-between; /* This will ensure the nav items are centered and the form/button are aligned to the right */
+}
+
+.form-inline, .btn-outline-primary {
+    margin-left: 10px; /* Add some spacing to the left of the search form and login button */
+}
+
+/* Align items to the right */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Style for navigation links */
+.nav-link {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: #007bff; /* Bootstrap primary color for button background */
+    color: white !important; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for search form and login button to align them to the right */
+.search-form, .login-button {
+    margin-left: auto;
+}
+
+/* Custom style for login button to match the navbar theme */
+.btn-outline-primary {
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Center-align nav items */
+.navbar-nav {
+    justify-content: center; /* This centers the navigation items */
+}
+
+/* Add padding to nav items */
+.nav-item {
+    padding: 0 15px; /* Adjust the padding as needed */
+}
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+/* item*/
+.content-box{
+    text-align: center;
+}
+.img-fluid {
+    max-width: 20%;
+    height: auto;
+}
