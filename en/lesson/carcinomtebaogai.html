@@ -8,6 +8,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
   <style>
       @media (max-width: 768px) {
           .sidebar {
@@ -144,6 +146,22 @@
                 <li>Intercellular bridges between tumor cells</li>
                 <li>Variable degrees of cellular differentiation</li>
               </ul>
+              <div class="container mt-5">
+                <div class="row no-gutters" style="text-align: center;">
+                  <div class="col-md-6">
+                    <a href="../../image/slide/scc/scc_01.jpg" data-fancybox="gallery" data-caption="Chất sắc tố">
+                      <img src="../../image/slide/scc/scc_01.jpg" alt="Image 1" class="img-fluid">
+                    </a>
+                    <p>Chất sắc tố</p>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="../../image/slide/scc/scc_02.jpg" data-fancybox="gallery" data-caption="Caption for Image 2">
+                      <img src="../../image/slide/scc/scc_02.jpg" alt="Image 2" class="img-fluid">
+                    </a>
+                    <p>Mô tả hình</p>
+                  </div>
+                </div>
+              </div>
             </section>
           
             <section id="referencepage">
@@ -170,6 +188,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add FancyBox3 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.dropdown-submenu a').on("click", function (e) {
@@ -178,6 +198,9 @@
                 e.stopPropagation();
                 e.preventDefault();
             });
+        });
+        $("[data-fancybox]").fancybox({
+      // Options here
         });
 
     </script>

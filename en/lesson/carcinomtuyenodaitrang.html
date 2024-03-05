@@ -8,6 +8,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
   <style>
       @media (max-width: 768px) {
           .sidebar {
@@ -48,7 +50,7 @@
       </nav>
     <!--Content-->
     <div class="jumbotron">
-      <h1 class="display-4">Goiter</h1>
+      <h1 class="display-4">Adenocarcinoma of the colon</h1>
       <p class="lead">Adenocarcinoma of the colon, a predominant subtype of colorectal cancer, represents a significant health challenge worldwide. This detailed overview caters to medical professionals, particularly those specializing in surgical pathology and students in the Pathology course. The information provided is comprehensive, covering various aspects from definition to diagnostic procedures, aiming to enhance understanding and clinical skills in diagnosing and managing this condition.</p>
     </div>
 
@@ -118,6 +120,22 @@
 
       <section id="gross-description">
         <h2>Gross Description</h2>
+        <div class="container mt-5">
+          <div class="row no-gutters" style="text-align: center;">
+            <div class="col-md-6">
+              <a href="../../image/slide/adenocarcinoma/gross_colonadenocarcinoma_04.jpg" data-fancybox="gallery" data-caption="Chất sắc tố">
+                <img src="../../image/slide/adenocarcinoma/gross_colonadenocarcinoma_04.jpg" alt="Image 1" class="img-fluid">
+              </a>
+              <p>Chất sắc tố</p>
+            </div>
+            <div class="col-md-6">
+              <a href="../../image/slide/adenocarcinoma/gross_colonadenocarcinoma_04.jpg" data-fancybox="gallery" data-caption="Caption for Image 2">
+                <img src="../../image/slide/adenocarcinoma/gross_colonadenocarcinoma_05.jpg" alt="Image 2" class="img-fluid">
+              </a>
+              <p>Mô tả hình</p>
+            </div>
+          </div>
+        </div>
         <p>Gross examination typically reveals a mass that can be either polypoid, ulcerating, or annular, often causing narrowing of the bowel lumen.</p>
       </section>
 
@@ -125,6 +143,28 @@
 
       <section id="microscopic">
         <h2>Microscopic (Histologic) Description</h2>
+        <div class="container mt-5">
+          <div class="row no-gutters" style="text-align: center;">
+            <div class="col-md-4">
+              <a href="../../image/slide/adenocarcinoma/colonadenocarcinoma_01.jpg" data-fancybox="gallery" data-caption="Chất sắc tố">
+                <img src="../../image/slide/adenocarcinoma/colonadenocarcinoma_01.jpg" alt="Image 1" class="img-fluid">
+              </a>
+              <p>Chất sắc tố</p>
+            </div>
+            <div class="col-md-4">
+              <a href="../../image/slide/adenocarcinoma/colonadenocarcinoma_02.jpg" data-fancybox="gallery" data-caption="Caption for Image 2">
+                <img src="../../image/slide/adenocarcinoma/colonadenocarcinoma_02.jpg" alt="Image 2" class="img-fluid">
+              </a>
+              <p>Mô tả hình</p>
+            </div>
+            <div class="col-md-4">
+              <a href="../../image/slide/adenocarcinoma/colonadenocarcinoma_03.jpg" data-fancybox="gallery" data-caption="Caption for Image 3">
+                <img src="../../image/slide/adenocarcinoma/colonadenocarcinoma_03.jpg" alt="Image 3" class="img-fluid">
+              </a>
+              <p>Mô tả hình</p>
+            </div>
+          </div>
+        </div>
         <p>Microscopically, adenocarcinoma of the colon shows glandular formation with varying degrees of differentiation. Poorly differentiated tumors have fewer glandular structures and more solid growth patterns. Features such as invasion depth, lymphovascular invasion, and perineural invasion are important prognostic factors.</p>
       </section>
 
@@ -150,6 +190,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add FancyBox3 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.dropdown-submenu a').on("click", function (e) {
@@ -158,6 +200,9 @@
         e.stopPropagation();
         e.preventDefault();
       });
+      $("[data-fancybox]").fancybox({
+      // Options here
+    });
     });
 
   </script>

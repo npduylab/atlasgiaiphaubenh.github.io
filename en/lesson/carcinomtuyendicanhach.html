@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <style>
         @media (max-width: 768px) {
             .sidebar {
@@ -155,6 +157,34 @@
 
             <section id="microscopic">
                 <h2>Microscopic (Histologic) Description</h2>
+                <div class="container mt-5">
+                    <div class="row no-gutters" style="text-align: center;">
+                      <div class="col-md-3">
+                        <a href="../../image/slide/" data-fancybox="gallery" data-caption="Chất sắc tố">
+                          <img src="../../image/slide/bcc/bcc_02.jpg" alt="Image 1" class="img-fluid">
+                        </a>
+                        <p>Chất sắc tố</p>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="../../image/slide/bcc/bcc_02.jpg" data-fancybox="gallery" data-caption="Caption for Image 2">
+                          <img src="../../image/slide/bcc/bcc_02.jpg" alt="Image 2" class="img-fluid">
+                        </a>
+                        <p>Mô tả hình</p>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="../../image/slide/bcc/bcc_03.jpg" data-fancybox="gallery" data-caption="Caption for Image 3">
+                          <img src="../../image/slide/bcc/bcc_03.jpg" alt="Image 3" class="img-fluid">
+                        </a>
+                        <p>Mô tả hình</p>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="../../image/slide/bcc/bcc_04.jpg" data-fancybox="gallery" data-caption="Caption for Image 3">
+                          <img src="../../image/slide/bcc/bcc_04.jpg" alt="Image 3" class="img-fluid">
+                        </a>
+                        <p>Mô tả hình</p>
+                      </div>
+                    </div>
+                  </div>
                 <p>
                     Microscopically, adenocarcinoma is characterized by glandular patterns of cancer cells, which may vary in differentiation. Metastatic lymph nodes show clusters of cancer cells within the lymphoid tissue. Special stains and immunohistochemical markers can help confirm the diagnosis and origin of the metastatic cells.
                 </p>
@@ -183,6 +213,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add FancyBox3 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.dropdown-submenu a').on("click", function (e) {
@@ -192,7 +224,9 @@
                 e.preventDefault();
             });
         });
-
+        $("[data-fancybox]").fancybox({
+      // Options here
+         });
     </script>
 </body>
 
