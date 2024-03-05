@@ -76,6 +76,9 @@
     text-align: center;
 }
 .img-fluid {
-    max-width: 20%;
+    max-width: 50%;
     height: auto;
+}
+.fancybox-caption__body {
+    font-size: 2em;
 }
